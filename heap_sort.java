@@ -4,7 +4,7 @@ public class HeapSort
     {
         int n = arr.length;
  
-        // Build heap (rearrange array)
+        // Build heap (rearrange array) only last but one and above level need to be considered swap(heapify), so i starts from n/2-1;
         for (int i = n / 2 - 1; i >= 0; i--)
             heapify(arr, n, i);
  
